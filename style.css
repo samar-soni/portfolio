@@ -1,11 +1,11 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 1px;
+    padding: 1px;
     font-family: "Oswald", sans-serif;
     /* height: 5200px; */
 }
 .navbar {
-    height: 10vmin;
+    height: 5rem;
     width: 100%;
     background-color: white;
     display: flex;
@@ -64,3 +64,64 @@
     color: rgb(0, 0, 255);
     text-decoration: wavy; 
 }
+
+#home {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    margin-top: 5rem;
+    padding: 5rem 0rem;
+    border: 2px solid black;
+    background-color: rgb(235, 238, 240);
+}
+
+.details {
+    padding-top: 20px;
+    padding: 2rem 0rem;
+}
+
+.details .intro {
+    font-size: 4rem;
+    color: #012970;
+    font-weight: bolder;
+    
+}
+.line2 {
+    display:flex;
+    font-size: 4rem;
+    color: #fc8c05;
+    font-weight: bolder;
+}
+.line3 {
+    font-size: 2.5rem;
+    display: flex;
+    font-weight: 300; 
+}
+.skill {
+    color : red;
+}
+.skill:hover {
+    font-weight: bolder;
+    cursor: pointer;
+}
+.aboutMe button {
+    background-color: #012970;
+    padding:  0.2rem 1.5rem;
+    border-radius: 2rem;
+}
+.aboutMe button a {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+}
+.aboutMe button:hover {
+    background-color: #1458cb;
+}
+#home .image img {
+    border: 2px solid black;
+    border-radius: 510px;
+    height: 30rem;
+}
+
