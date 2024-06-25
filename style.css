@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     font-family: "Oswald", sans-serif;
-    /* height: 5200px; */
 }
 .navbar {
     height: 5rem;
@@ -137,6 +136,7 @@
 }
 header .icon img{
     height: 4rem;
+    padding-right: 1rem;
 }
 header .about {
     margin: 2rem 0rem;
@@ -195,6 +195,57 @@ header .about span {
     color: white;
     background-color: #012970;
     font-size: 2.1rem;
+}
+#Skill {
+    background-color: #012970;
+    background: linear-gradient(to bottom, #57059e, #4a00e0);
+    height: 100vh;
+}
+#Skill .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+#Skill .header .icon img{
+    height: 3.9rem;
+    /* border: 2px solid black; */
+}
+#Skill .header .text {
+    /* border: 2px solid black; */
+    color: white;
+    font-size: 2.5rem;
+    padding: 0rem 1rem;
+    font-weight: bolder;
+}
+#Skill .header .text span {
+    color: yellow;
+}
+#Skill .grid {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 65rem;
+    margin: auto;
+    background-color: rgb(151, 151, 151);
+    border: 5rem;
+}
+#Skill .grid .bar {
+    text-align: center;
+    border: 2px solid rgb(237, 232, 232);
+    padding: 1rem;
+    margin: 2rem;
+    width: 6.8rem;
+    height: 6rem;
+    background-color: black;
+    border-radius: 15px;
+}
+#Skill .grid .bar img {
+    height: 4.5rem;
+}
+#Skill .grid .bar info {
+    font-size: 1.5rem;
+    color: white;
 }
 
 
