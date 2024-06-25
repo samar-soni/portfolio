@@ -1,2 +1,4 @@
 # Portfolio
-Trying to connect with VS Code
+Creating my Portfolia 
+<br>
+I love developing
