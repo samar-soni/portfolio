@@ -1,6 +1,6 @@
 * {
-    margin: 1px;
-    padding: 1px;
+    margin: 0px;
+    padding: 0px;
     font-family: "Oswald", sans-serif;
     /* height: 5200px; */
 }
@@ -71,9 +71,9 @@
     height: 100%;
     justify-content: space-around;
     margin-top: 5rem;
-    padding: 5rem 0rem;
-    border: 2px solid black;
+    box-shadow: 0px 0px 3px 0px black;
     background-color: rgb(235, 238, 240);
+    padding: 1rem;
 }
 
 .details {
@@ -125,4 +125,79 @@
     border-radius: 510px;
     height: 30rem;
 }
+#About {
+    box-shadow: 0px 0px 8px 0px black;
+}
+
+#About header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header .icon img{
+    height: 4rem;
+}
+header .about {
+    margin: 2rem 0rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+header .about span {
+    color: #7303a7;
+}
+#About .details {
+    display: flex;
+    justify-content: center;
+}
+#About .details img {
+    height: 35rem;
+    border-radius: 3rem;
+    margin-right: 3rem;
+    box-shadow: 1px 2px 3px 3px black;
+}
+#About .description {
+    width: 30rem;
+}
+#About .description h1 {
+    font-size: 3.5rem;
+}
+#About .description .skills {
+    font-size: 2rem;
+    color: #7303a7;
+    
+}
+#About .aboutMe {
+    font-size: 1.3rem;
+}
+#About .email span{
+    font-weight: bolder;
+    color: #7303a7;
+    font-size: 1.1rem;
+}
+#About .email {
+    font-size: 1rem;
+}
+#About .description .resume button {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    background-color: #1458cb;
+    box-shadow: 1px 2px 3px 3px black;
+    font-size: 2rem;
+}
+#About .description .resume button a {
+    text-decoration: none;
+    color: white;
+}
+#About .description .resume button:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #012970;
+    font-size: 2.1rem;
+}
+
+
+
+
 
