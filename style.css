@@ -225,7 +225,7 @@ header .about span {
     display: flex;
     flex-wrap: wrap;
     border: 2px solid black;
-    width: 65rem;
+    width: 70rem;
     margin: auto;
     background-color: rgb(151, 151, 151);
     border: 5rem;
@@ -309,6 +309,43 @@ header .about span {
     font-weight: 500;
 
 }
+
+#Projects {
+    background-color: #012970;
+    height: 50rem;
+}
+#Projects header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+#Projects header img {
+    height: 3rem;
+}
+#Projects header .title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+#Projects header .title span {
+    color: yellow;
+}
+#Projects .projects {
+    
+    text-align: center;
+    align-items: center;
+}
+#Projects .projects .cards {
+    color: white;
+    border: 2px solid black;
+    width: 50rem;
+    font-size: 5rem;
+    text-align: center;
+    align-items: center;
+    padding-right: 5rem;
+}
+
 
 
 
