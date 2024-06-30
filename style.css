@@ -79,7 +79,7 @@
     padding: 1rem;
 }
 
-.details {
+#home .details {
     padding-top: 20px;
     padding: 2rem 0rem;
     width: 45rem;
@@ -88,7 +88,14 @@
 .details .intro {
     font-size: 4rem;
     color: #012970;
-    font-weight: bolder;
+    font-weight: 600;
+    
+}
+.details .line2 .surname {
+    font-size: 4rem;
+    color:  #fc8c05;
+    font-weight: 600;
+    padding-left: 0.5rem;
     
 }
 .line2 {
@@ -157,6 +164,7 @@ header .about span {
 #About .details {
     display: flex;
     justify-content: center;
+    padding: 2rem 0rem;
 }
 #About .details img {
     height: 35rem;
