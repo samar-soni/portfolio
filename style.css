@@ -1,7 +1,11 @@
+
+
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
+  font-weight: 350;
+  font-style: normal;
 }
 .navbar {
     height: 5rem;
@@ -78,6 +82,7 @@
 .details {
     padding-top: 20px;
     padding: 2rem 0rem;
+    width: 45rem;
 }
 
 .details .intro {
@@ -96,9 +101,12 @@
     font-size: 2.5rem;
     display: flex;
     font-weight: 300; 
+    padding-right: 1rem;
 }
 .skill {
+    padding-left: 0.5rem;
     color : red;
+    font-weight: 400;
 }
 .skill:hover {
     font-weight: bolder;
@@ -164,8 +172,7 @@ header .about span {
 }
 #About .description .skills {
     font-size: 2rem;
-    color: #7303a7;
-    
+    color: #7303a7; 
 }
 #About .aboutMe {
     font-size: 1.3rem;
@@ -199,7 +206,7 @@ header .about span {
 #Skill {
     background-color: #012970;
     background: linear-gradient(to bottom, #57059e, #4a00e0);
-    height: 100vh;
+    padding-bottom: 5rem;
 }
 #Skill .header {
     display: flex;
@@ -222,13 +229,16 @@ header .about span {
     color: yellow;
 }
 #Skill .grid {
+    height: 50rem;
     display: flex;
     flex-wrap: wrap;
     border: 2px solid black;
-    width: 70rem;
+    width: 65rem;
     margin: auto;
     background-color: rgb(151, 151, 151);
     border: 5rem;
+    padding: auto;
+    height: 40rem;
 }
 #Skill .grid .bar {
     text-align: center;
@@ -250,7 +260,7 @@ header .about span {
     height: 4.5rem;
 }
 #Skill .grid .bar info {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: white;
 }
 #Education {
@@ -312,7 +322,7 @@ header .about span {
 
 #Projects {
     background-color: #012970;
-    height: 50rem;
+    height: 40rem;
 }
 #Projects header {
     display: flex;
@@ -332,18 +342,87 @@ header .about span {
     color: yellow;
 }
 #Projects .projects {
-    
+    display: flex;
+    justify-content: space-around;
     text-align: center;
     align-items: center;
 }
-#Projects .projects .cards {
+#Projects .projects .card {
+    
     color: white;
     border: 2px solid black;
-    width: 50rem;
-    font-size: 5rem;
+    width: 25rem;
     text-align: center;
     align-items: center;
     padding-right: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+#Projects .projects .card .image{
+    height: 20rem;
+}
+#Projects .projects .card .image img{
+    height: 20rem; 
+     width: 30rem;
+    object-fit: cover;
+    border: 5rem;
+
+}
+#Projects .projects .card .info {
+    height: 6rem;
+    width: 30rem;
+    background-color: yellow;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    /* padding: auto; */
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Projects .projects .card .info span {
+    text-align: center;
+    
+}
+
+#contact {
+    background-color: rgb(211, 236, 245);
+}
+#contact .content {
+    padding: 3rem 0rem  ;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem; 
+}
+#contact .content .card  {
+    width: 20rem;
+    font-weight: 500;
+
+}
+#contact .content .card span{
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+#contact .content .card p.connect{
+    font-size: 1.5rem;
+    font-weight: 450;
+}
+#contact .content .card a{
+    text-decoration: none;
+    color: black;
+    font-weight: 450;
+}
+#contact .content .card a:hover{
+    color: #005eff ;
+}
+#contact  p.copyright{
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    padding: 1rem;
 }
 
 
