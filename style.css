@@ -9,7 +9,7 @@
 }
 .navbar {
     height: 5rem;
-    width: 100%;
+    width: 98vw;
     background-color: white;
     display: flex;
     justify-content: space-around;  
@@ -18,6 +18,7 @@
     top: 0;
     left: 0;
     z-index: 1000;
+    padding: 0rem 1rem;
 }
 .name {
     display: flex;
@@ -43,10 +44,37 @@
 }
 .nav-list {
   display: flex;
-  justify-content: space-between;
   text-align: center;
   align-items: center;
+}
+@media screen and (max-width: 1000px) {
+    .nav-list ul li a {
+        display: none;
+    }
+    .navbar a.icon{
+        /* color: red; */
+        display: block;
+        float: right;
+    }
+    .nav-list ul {
+        display: ;
+    }
+}
+.togglee{
+    display:flex;
+    /* background-color: red; */
+    color: #005eff;
 
+}
+
+
+
+
+.nav-list a.icon {
+    font-size: 1.7rem;
+    padding-right: 1.5rem;
+    display: none;
+    cursor: pointer;
 }
 .nav-list ul {
     display: flex;
@@ -54,7 +82,6 @@
 }
 .nav-list ul li {
     margin: 1rem;
-    /* font-size: 1.5rem; */
 }
 .nav-list ul li a {
     text-decoration: none;
@@ -70,7 +97,7 @@
 
 #home {
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     justify-content: space-around;
     margin-top: 5rem;
@@ -140,6 +167,7 @@
     height: 30rem;
 }
 #About {
+    width: 102vw;
     box-shadow: 0px 0px 8px 0px black;
 }
 
@@ -175,8 +203,9 @@ header .about span {
 #About .description {
     width: 30rem;
 }
-#About .description h1 {
+#About .description h {
     font-size: 3.5rem;
+    font-weight: 400;
 }
 #About .description .skills {
     font-size: 2rem;
@@ -186,12 +215,13 @@ header .about span {
     font-size: 1.3rem;
 }
 #About .email span{
-    font-weight: bolder;
+    font-weight: 600;
     color: #7303a7;
     font-size: 1.1rem;
 }
 #About .email {
     font-size: 1rem;
+    font-weight: 500;
 }
 #About .description .resume button {
     margin-top: 1rem;

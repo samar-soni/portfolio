@@ -1,0 +1,10 @@
+ @media screen and (max-width: 1000px) {
+    .nav-list ul li a {
+        display: none;
+    }
+    .navbar a.icon{
+        color: red;
+        display: block;
+        float: right;
+    }
+}
