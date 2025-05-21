@@ -1,469 +1,442 @@
-
-
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: "Poppins", sans-serif;
-  font-weight: 350;
-  font-style: normal;
-}
-.navbar {
-    height: 5rem;
-    width: 98vw;
-    background-color: white;
-    display: flex;
-    justify-content: space-around;  
-    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
-    position : fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    padding: 0rem 1rem;
-}
-.name {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2px;
-}
-.logo-icon img {
-    height: 6vmin;
-    border: 2px solid black;
-    padding: 5px;
-    border-radius: 50vmin;  
-
-}
-.logo-name {
-    font-weight:bolder;
-    font-size: 2rem;
-}
-.logo-name:hover {
-    font-weight:bolder;
-    font-size: 2rem;
-    color: #fc8c05;
-}
-.nav-list {
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
-@media screen and (max-width: 1000px) {
-    .nav-list ul li a {
-        display: none;
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 350;
+        font-style: normal;
     }
-    .navbar a.icon{
-        /* color: red; */
-        display: block;
-        float: right;
+    
+    .navbar {
+        height: 5rem;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 0 1rem;
+        flex-wrap: wrap;
     }
+    
+    .name {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .logo-icon img {
+        height: 50px;
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    
+    .logo-name {
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+    
+    .logo-name:hover {
+        color: #fc8c05;
+    }
+    
+    .nav-list {
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+    }
+    
     .nav-list ul {
-        display: ;
+        display: flex;
+        list-style-type: none;
+        gap: 1rem;
     }
-}
-.togglee{
-    display:flex;
-    /* background-color: red; */
-    color: #005eff;
-
-}
-
-
-
-
-.nav-list a.icon {
-    font-size: 1.7rem;
-    padding-right: 1.5rem;
-    display: none;
-    cursor: pointer;
-}
-.nav-list ul {
-    display: flex;
-    list-style-type: none;  
-}
-.nav-list ul li {
-    margin: 1rem;
-}
-.nav-list ul li a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: black;
-    font-weight: bolder;
-}
-.nav-list ul li a:hover { 
-    font-size: 1.5rem;
-    color: rgb(0, 0, 255);
-    text-decoration: wavy; 
-}
-
-#home {
-    display: flex;
-    width: 100vw;
-    height: 100%;
-    justify-content: space-around;
-    margin-top: 5rem;
-    box-shadow: 0px 0px 3px 0px black;
-    background-color: rgb(235, 238, 240);
-    padding: 1rem;
-}
-
-#home .details {
-    padding-top: 20px;
-    padding: 2rem 0rem;
-    width: 45rem;
-}
-
-.details .intro {
-    font-size: 4rem;
-    color: #012970;
-    font-weight: 600;
     
-}
-.details .line2 .surname {
-    font-size: 4rem;
-    color:  #fc8c05;
-    font-weight: 600;
-    padding-left: 0.5rem;
+    .nav-list ul li a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: black;
+    }
     
-}
-.line2 {
-    display:flex;
-    font-size: 4rem;
-    color: #fc8c05;
-    font-weight: bolder;
-}
-.line3 {
-    font-size: 2.5rem;
-    display: flex;
-    font-weight: 300; 
-    padding-right: 1rem;
-}
-.skill {
-    padding-left: 0.5rem;
-    color : red;
-    font-weight: 400;
-}
-.skill:hover {
-    font-weight: bolder;
-    cursor: pointer;
-}
-.aboutMe button {
-    background-color: #012970;
-    padding:  0.2rem 1.5rem;
-    border-radius: 2rem;
-    box-shadow: 1px 2px 3px 4px  rgba(19, 78, 241, 0.3);
-}
-.aboutMe button a {
-    font-size: 2.5rem;
-    font-weight: 300;
-    text-decoration: none;
-    color: white;
-}
-.aboutMe button:hover {
-    background-color: #1458cb;
-}
-#home .image img {
-    border: 2px solid black;
-    border-radius: 510px;
-    height: 30rem;
-}
-#About {
-    width: 102vw;
-    box-shadow: 0px 0px 8px 0px black;
-}
-
-#About header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-header .icon img{
-    height: 4rem;
-    padding-right: 1rem;
-}
-header .about {
-    margin: 2rem 0rem;
-    font-size: 2.5rem;
-    font-weight: bolder;
-}
-header .about span {
-    color: #7303a7;
-}
-#About .details {
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0rem;
-}
-#About .details img {
-    height: 35rem;
-    border-radius: 3rem;
-    margin-right: 3rem;
-    box-shadow: 1px 2px 3px 3px black;
-}
-#About .description {
-    width: 30rem;
-}
-#About .description h {
-    font-size: 3.5rem;
-    font-weight: 400;
-}
-#About .description .skills {
-    font-size: 2rem;
-    color: #7303a7; 
-}
-#About .aboutMe {
-    font-size: 1.3rem;
-}
-#About .email span{
-    font-weight: 600;
-    color: #7303a7;
-    font-size: 1.1rem;
-}
-#About .email {
-    font-size: 1rem;
-    font-weight: 500;
-}
-#About .description .resume button {
-    margin-top: 1rem;
-    padding: 0.5rem 2rem;
-    border-radius: 2rem;
-    background-color: #1458cb;
-    box-shadow: 1px 2px 3px 3px black;
-    font-size: 2rem;
-}
-#About .description .resume button a {
-    text-decoration: none;
-    color: white;
-}
-#About .description .resume button:hover {
-    text-decoration: none;
-    color: white;
-    background-color: #012970;
-    font-size: 2.1rem;
-}
-#Skill {
-    background-color: #012970;
-    background: linear-gradient(to bottom, #57059e, #4a00e0);
-    padding-bottom: 5rem;
-}
-#Skill .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0rem;
-}
-#Skill .header .icon img{
-    height: 3.9rem;
-    /* border: 2px solid black; */
-}
-#Skill .header .text {
-    /* border: 2px solid black; */
-    color: white;
-    font-size: 2.5rem;
-    padding: 0rem 1rem;
-    font-weight: bolder;
-}
-#Skill .header .text span {
-    color: yellow;
-}
-#Skill .grid {
-    height: 50rem;
-    display: flex;
-    flex-wrap: wrap;
-    border: 2px solid black;
-    width: 65rem;
-    margin: auto;
-    background-color: rgb(151, 151, 151);
-    border: 5rem;
-    padding: auto;
-    height: 40rem;
-}
-#Skill .grid .bar {
-    text-align: center;
-    border: 2px solid rgb(237, 232, 232);
-    padding: 1rem;
-    margin: 2rem;
-    width: 6.8rem;
-    height: 6rem;
-    background-color: rgba(0, 0, 22, 0.9);;
-    border-radius: 15px;
-}
-#Skill .grid .bar:hover {
-    background-color: black;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 6.9rem;
-    height: 6.1rem;
-}
-#Skill .grid .bar img {
-    height: 4.5rem;
-}
-#Skill .grid .bar info {
-    font-size: 1.3rem;
-    color: white;
-}
-#Education {
-    background-color: rgb(211, 236, 245);
-    padding-bottom: 2rem;
-}
-
-#Education .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.2rem 0rem;
-}
-#Education .header img {
-    height: 3rem;
-}
-#Education .header .title {
-    font-size: 2.5rem;
-    font-weight: bolder;
-}
-#Education .header .title span {
-    color: purple;
-}
-#Education .description {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-}
-#Education .institute {
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    width: 71rem;
-    margin: auto;
-    background-color: white;
-    margin-bottom: 2.5rem;
-    box-shadow: 2px 2px 2px 2px rgb(165, 163, 163);
-}
-#Education .institute .image  {
-    padding-right: 2rem;
-}
-#Education .institute .image img {
-    height: 10rem;
-}
-#Education .institute .content p.Degree {
-    font-size: 2.5rem;
-    color:#012970
-}
-#Education .institute .content p.collegeName {
-    font-size: 1.5rem;
-    color: black; 
-}
-#Education .institute .content p.year {
-    font-size: 1.5rem;
-    color: green; 
-    font-weight: 500;
-
-}
-
-#Projects {
-    background-color: #012970;
-    height: 40rem;
-}
-#Projects header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-}
-#Projects header img {
-    height: 3rem;
-}
-#Projects header .title {
-    color: white;
-    font-size: 2.5rem;
-    font-weight: bolder;
-}
-#Projects header .title span {
-    color: yellow;
-}
-#Projects .projects {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-}
-#Projects .projects .card {
+    .nav-list ul li a:hover {
+        color: #005eff;
+    }
     
-    color: white;
-    border: 2px solid black;
-    width: 25rem;
-    text-align: center;
-    align-items: center;
-    padding-right: 5rem;
-    display: flex;
-    flex-wrap: wrap;
-}
-#Projects .projects .card .image{
-    height: 20rem;
-}
-#Projects .projects .card .image img{
-    height: 20rem; 
-     width: 30rem;
-    object-fit: cover;
-    border: 5rem;
-
-}
-#Projects .projects .card .info {
-    height: 6rem;
-    width: 30rem;
-    background-color: yellow;
-    color: black;
-    font-size: 3rem;
-    text-align: center;
-    /* padding: auto; */
-    border: 2px solid red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#Projects .projects .card .info span {
-    text-align: center;
+    .nav-list a.icon {
+        display: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
     
-}
-
-#contact {
-    background-color: rgb(211, 236, 245);
-}
-#contact .content {
-    padding: 3rem 0rem  ;
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.5rem; 
-}
-#contact .content .card  {
-    width: 20rem;
-    font-weight: 500;
-
-}
-#contact .content .card span{
-    font-size: 2.2rem;
-    font-weight: 500;
-}
-#contact .content .card p.connect{
-    font-size: 1.5rem;
-    font-weight: 450;
-}
-#contact .content .card a{
-    text-decoration: none;
-    color: black;
-    font-weight: 450;
-}
-#contact .content .card a:hover{
-    color: #005eff ;
-}
-#contact  p.copyright{
-    font-size: 1.5rem;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-weight: 400;
-    padding: 1rem;
-}
-
-
-
-
-
+    .togglee {
+        display: flex;
+    }
+    
+    #home {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 5rem;
+        padding: 2rem;
+        background-color: #ebeef0;
+        box-shadow: 0px 0px 3px 0px black;
+    }
+    
+    #home .details {
+        max-width: 600px;
+    }
+    
+    .details .intro,
+    .details .line2 .surname {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    
+    .details .line2 {
+        display: flex;
+        gap: 0.5rem;
+        color: #fc8c05;
+    }
+    
+    .line3 {
+        font-size: 1.5rem;
+        display: flex;
+        gap: 0.5rem;
+        color: red;
+    }
+    
+    .aboutMe button {
+        background-color: #012970;
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .aboutMe button a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    
+    #home .image img {
+        max-width: 300px;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+    
+    #About {
+        padding: 2rem;
+        background-color: #fff;
+    }
+    
+    #About header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    
+    header .icon img {
+        height: 3rem;
+        margin-right: 1rem;
+    }
+    
+    header .about {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    header .about span {
+        color: #7303a7;
+    }
+    
+    #About .details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    #About .details img {
+        max-width: 250px;
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    #About .description {
+        max-width: 500px;
+    }
+    
+    #About .description h {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+    #About .description .skills {
+        color: #7303a7;
+        font-size: 1.3rem;
+    }
+    
+    #About .aboutMe {
+        margin: 1rem 0;
+        font-size: 1rem;
+    }
+    
+    #About .email {
+        font-size: 1rem;
+        margin: 0.3rem 0;
+    }
+    
+    #About .email span {
+        color: #7303a7;
+        font-weight: bold;
+    }
+    
+    #About .resume button {
+        margin-top: 1rem;
+        background-color: #1458cb;
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
+    }
+    
+    #About .resume button a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #Skill {
+        background: linear-gradient(to bottom, #57059e, #4a00e0);
+        padding: 2rem;
+        color: white;
+    }
+    
+    #Skill .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    #Skill .header img {
+        height: 3rem;
+    }
+    
+    #Skill .header .text {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    #Skill .header .text span {
+        color: yellow;
+    }
+    
+    #Skill .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1rem;
+        width: 90%;
+        margin: auto;
+        background-color: rgba(0, 0, 22, 0.9);
+        padding: 2rem;
+        border-radius: 10px;
+    }
+    
+    #Skill .grid .bar {
+        text-align: center;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        transition: all 0.3s ease;
+    }
+    
+    #Skill .grid .bar:hover {
+        background-color: black;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        transform: scale(1.05);
+    }
+    
+    #Skill .grid .bar img {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    
+    #Skill .grid .bar info {
+        font-size: 1rem;
+        color: white;
+    }
+    
+    #Education {
+        background-color: #d3ecf5;
+        padding: 2rem 1rem;
+    }
+    
+    #Education .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    
+    #Education .header img {
+        height: 2.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    #Education .header .title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    #Education .header .title span {
+        color: purple;
+    }
+    
+    #Education .description {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+    }
+    
+    #Education .institute {
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem auto;
+        padding: 1rem;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+    }
+    
+    #Education .institute .image img {
+        height: 80px;
+    }
+    
+    #Education .content p {
+        margin: 0.3rem 0;
+    }
+    
+    .Degree {
+        color: #012970;
+        font-size: 1.2rem;
+    }
+    
+    .year {
+        color: green;
+    }
+    
+    #Projects {
+        background-color: #012970;
+        padding: 2rem 1rem;
+        color: white;
+    }
+    
+    #Projects header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    #Projects header .title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    #Projects header .title span {
+        color: yellow;
+    }
+    
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+    
+    .projects .card {
+        width: 300px;
+        background-color: #000016;
+        border: 1px solid white;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+    .projects .card:hover {
+        transform: scale(1.03);
+    }
+    
+    .projects .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    
+    .projects .card .info {
+        background-color: yellow;
+        color: black;
+        text-align: center;
+        padding: 0.8rem;
+        font-weight: bold;
+    }
+    
+    #contact {
+        background-color: #d3ecf5;
+        padding: 2rem 1rem;
+    }
+    
+    #contact .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    
+    #contact .card {
+        flex: 1 1 250px;
+        max-width: 300px;
+    }
+    
+    #contact .card span {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    
+    #contact .card p,
+    #contact .card a {
+        font-size: 1rem;
+        margin: 0.3rem 0;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #contact .card a:hover {
+        color: #005eff;
+    }
+    
+    #contact hr {
+        margin: 2rem auto;
+        width: 90%;
+    }
+    
+    .copyright {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
